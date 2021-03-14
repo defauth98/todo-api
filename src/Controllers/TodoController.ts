@@ -5,15 +5,16 @@ import Todos from "../Models/Todos";
 export default class TodoController {
   async create(request: Request, response: Response) {
     const { name, done } = request.body;
+ 
+    const createdTodo = await Todos.create({ name, done });
 
-    await Todos.create({ name, done });
-
-    response.status(201).json({ message: "success" });
+    return response.status(201).json(createdTodo);
   }
 
   async index(request: Request, response: Response) {
     const todos = await Todos.findAll();
-    response.json(todos);
+    
+    return response.json(todos);
   }
 
   async update(request: Request, response: Response) {

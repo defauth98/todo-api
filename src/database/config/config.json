@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "postgres",
-    "password": null,
-    "database": "todo-api",
+    "password": "docker",
+    "database": "todoapi",
     "host": "127.0.0.1",
     "dialect": "postgres"
   }
