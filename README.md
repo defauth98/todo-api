@@ -11,7 +11,7 @@ Aplicação backend de uma lista de tarefas.
 
 ### :nut_and_bolt: Tecnologias
 
-Esse projeto foi desenvolvido com a seguinte técnologias:
+Esse projeto foi desenvolvido com a seguinte tecnologias:
 
 - [NodeJS][nodejs]
 - [Sequelize][sequelize]
